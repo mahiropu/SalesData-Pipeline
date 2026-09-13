@@ -1,0 +1,45 @@
+paths:
+  incoming_dir: data/incoming
+  archive_dir: data/archive
+  quarantine_dir: data/quarantine
+  warehouse_dir: data/warehouse
+  database: sales.duckdb
+
+generator:
+  days: 14
+  orders_per_day: 400
+  bad_row_rate: 0.04
+  seed: 42
+
+products:
+  - sku: LAPTOP-01
+    name: Laptop
+    category: Electronics
+    unit_price: 899.00
+  - sku: PHONE-01
+    name: Smartphone
+    category: Electronics
+    unit_price: 549.00
+  - sku: DESK-01
+    name: Standing Desk
+    category: Furniture
+    unit_price: 320.00
+  - sku: CHAIR-01
+    name: Office Chair
+    category: Furniture
+    unit_price: 180.00
+  - sku: MUG-01
+    name: Coffee Mug
+    category: Kitchen
+    unit_price: 12.50
+  - sku: KETTLE-01
+    name: Electric Kettle
+    category: Kitchen
+    unit_price: 45.00
+
+countries:
+  - BD
+  - BE
+  - GB
+  - US
+  - JP

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+data/incoming/*.csv
+data/archive/*.csv
+data/quarantine/*.csv
+data/warehouse/*
+!data/**/.gitkeep
+logs/*.log
+sales.duckdb
+.DS_Store

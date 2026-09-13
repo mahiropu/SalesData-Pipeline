@@ -27,7 +27,7 @@ def main():
         else:
             print(df.to_string(index=False))
 
-    print("\n=== File processing log ===")
+    print("\n=== File processing log here ===")
     log = connection.execute("SELECT * FROM processed_files ORDER BY file_name").df()
     print(log.to_string(index=False))
 
